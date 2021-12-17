@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:team1/constant/product_data.dart';
 import 'package:team1/pages/cart_page.dart';
 import 'package:team1/pages/product_detail_page.dart';
-
 import 'package:team1/theme/colors.dart';
 import 'package:team1/widgets/app_bar.dart';
 
@@ -25,6 +24,7 @@ class _HomePageState extends State<HomePage> {
   
   Widget getBody(){
     return ListView(
+    
       children: <Widget>[
         
         Padding(

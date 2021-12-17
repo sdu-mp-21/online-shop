@@ -1,12 +1,25 @@
+import 'package:team1/screens/login_screen.dart';
+import 'package:team1/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:team1/pages/home_page.dart';
 
 void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    theme: ThemeData(
-      fontFamily: 'Averta'
-    ),
-    home: HomePage(),
-  ));
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Flutter",
+      theme: ThemeData(
+
+
+        primarySwatch: Colors.blue, 
+      ),
+      home: LoginScreen(),
+      
+    );
+}
 }

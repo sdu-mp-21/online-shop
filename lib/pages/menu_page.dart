@@ -34,6 +34,7 @@ class _MenuPageState extends State<MenuPage> {
       "Profile",
       "Log out"
     ];
+    
     return ListView(
       children: <Widget>[
         Padding(padding: EdgeInsets.symmetric(horizontal: 30,vertical: 60),child: 
