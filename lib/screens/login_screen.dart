@@ -1,3 +1,5 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:team1/pages/home_page.dart';
 import 'package:team1/screens/home_screen.dart';
 import 'package:team1/screens/registration_screen.dart';
@@ -20,6 +22,13 @@ final _formKey = GlobalKey<FormState>();
 final TextEditingController emailController = new TextEditingController();
 final TextEditingController passwordController = new TextEditingController(); 
   
+
+
+
+ //firebase 
+
+ final _auth  = FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context) {
     
@@ -28,7 +37,18 @@ final TextEditingController passwordController = new TextEditingController();
       autofocus: false,
       controller: emailController,
       keyboardType: TextInputType.emailAddress,
-
+      validator: (value)
+      {
+        if(value ?.isEmpty){
+          "Please Enter Your Email";
+        }
+        // reg 
+        if(!RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]").hasMatch(value))
+        {
+          return ("Please Enater a valid email");
+        }
+        return null;
+      },
       onSaved: (value){
         emailController.text != value;
 
@@ -50,6 +70,18 @@ final TextEditingController passwordController = new TextEditingController();
       autofocus: false,
       controller: passwordController,
       obscureText: true,
+
+      validator:(value){
+        RegExp regex = new RegExp(r'^.{6,}$');
+        if(value.isEmpty){
+          return("Password is required for login");
+
+
+        }
+        if(!regex.hasMatch(value)){
+          return("Please Enter Valid Password(Min.6 Characters");
+        }
+      },
 
 
       onSaved: (value){
@@ -75,8 +107,7 @@ final TextEditingController passwordController = new TextEditingController();
         padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery.of(context).size.width,
         onPressed: () {
-          Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => HomePage()));
+         signIn(emailController.text, passwordController.text);
         },
         child: Text("Login" ,textAlign: TextAlign.center,
         style: TextStyle(
@@ -141,4 +172,22 @@ final TextEditingController passwordController = new TextEditingController();
       ),
     );
   }
+  void signIn(String email, String password) async
+{
+
+  if(_formKey.currentState.validate())
+  {
+    await _auth.
+    signInWithEmailAndPassword(email: email, password: password)
+    .then((uid) => {
+      Fluttertoast.showToast(msg: "Login Successful"),
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomePage()))
+
+    }).catchError((e)
+    {
+      Fluttertoast.showToast(msg: e.message);
+    });
+  }
 }
+}
+

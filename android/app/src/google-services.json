@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "793786896069",
+    "project_id": "empasswordauth",
+    "storage_bucket": "empasswordauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793786896069:android:7196bc47a75635fbbdaaac",
+        "android_client_info": {
+          "package_name": "com.example.list"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793786896069-ormk1tj77p5ht2m1p80m9o5tih324ugt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.list",
+            "certificate_hash": "123b8d504b676e242649be75a445cd586a1126f4"
+          }
+        },
+        {
+          "client_id": "793786896069-9d4q71e42jph0jshtfsb85kn1lbvir7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_u7-VFPcIi6RUaQynQcFAo4EMbjQChuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793786896069-9d4q71e42jph0jshtfsb85kn1lbvir7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
