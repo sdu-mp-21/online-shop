@@ -13,5 +13,22 @@ This application is an online flower shop. And with all the convenience for the 
 - [Bissenbay Dauletbayev](https://github.com/bissenbay) - b.dauletbayev@sdu.edu.kz
 
 ## Members 
+- [Berik Tolebi](https://github.com/tulebi) - 200113011@stu.sdu.edu.kz
+- [Alisher Zhorakhanov](https://github.com/zhorakhanov1) - 180107024@stu.sdu.edu.kz
+- [Alizhomart Shukayev](https://github.com/alizhomart) - 180107176@stu.sdu.edu.kz
 
-Berik Tulebi
+## Goal
+
+Make it a convenience for customers
+
+## Project structure 
+
+- Login screen 
+- Registration screen
+- Home page
+- Menu page 
+- Product detail page
+
+## Screenshots 
+
+
