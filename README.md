@@ -6,11 +6,6 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+This application is an online flower shop. And with all the convenience for the client. Through this application, they can choose the number of flowers and decoration or design.Through the search, you can search for the desired flower. Or you can use a filter to make it easier to search. And prices can be sorted in descending and ascending order. there is a function of favorites and they can be saved in favorites by clicking on the heart.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Thank you for using our application!!!
