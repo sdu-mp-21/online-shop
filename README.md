@@ -10,7 +10,7 @@ This application is an online flower shop. And with all the convenience for the 
 
 ## Mentor
 
-Bissenbay Dauletbayev - b.dauletbayev@sdu.edu.kz
+@Bissenbay Dauletbayev - b.dauletbayev@sdu.edu.kz
 
 ## Members 
 
