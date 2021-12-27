@@ -23,8 +23,8 @@ Make it a convenience for customers
 
 ## Scope and Features
 
-Same UI and Business Logic in All Platforms
-Similar to Native App Performance
+- Same UI and Business Logic in All Platforms
+- Similar to Native App Performance
 
 ## Project structure 
 
