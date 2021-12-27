@@ -37,3 +37,5 @@ Make it a convenience for customers
 
 ## Final report
 https://docs.google.com/document/d/1Ta_VahX_vRAH9obMkok8AmP4vDk5wcJ8PCelF3e9kko/edit?usp=sharing
+## License & copyright
+© Suleyman Demirel University
