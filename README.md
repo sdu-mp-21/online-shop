@@ -21,6 +21,11 @@ This application is an online flower shop. And with all the convenience for the 
 
 Make it a convenience for customers
 
+## Scope and Features
+
+Same UI and Business Logic in All Platforms
+Similar to Native App Performance
+
 ## Project structure 
 
 - Login screen 
@@ -28,6 +33,8 @@ Make it a convenience for customers
 - Home page
 - Menu page 
 - Product detail page
+## Users
+Anyone who wants to buy a flower can use this application.
 
 ## Screenshots 
 ![This is an image](assets/readme/1.jpg)
